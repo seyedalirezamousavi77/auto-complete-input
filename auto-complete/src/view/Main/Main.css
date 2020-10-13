@@ -1,3 +1,32 @@
+
 .d-none{
     display: none !important;
+}
+.bg-img{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../asset/img/wood-2065366_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.my-input{
+    height: 2.5rem;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 1px 1px 20px rgba(0 , 0 , 0 , 1);
+    padding-left: 3rem;
+    background-image: url('../../asset/img/search-user.png') ;
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: .75%;
+}
+.my-input:focus , .my-input:active{
+    outline: none;
+}
+.bg-result{
+    background: rgba(255 , 255 , 255 , .1);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
 }
