@@ -1,6 +1,6 @@
 import react,{useState , useEffect} from 'react'
 
-function useDebounce(value, delay) {
+function useDebounce(value, delay , setIsSearching) {
 
     const [debouncedValue, setDebouncedValue] = useState(value);
   
@@ -9,7 +9,7 @@ function useDebounce(value, delay) {
         const handler = setTimeout(() => {
           setDebouncedValue(value);
         }, delay);
-  
+        setIsSearching(true)
         
         return () => {
           clearTimeout(handler);
